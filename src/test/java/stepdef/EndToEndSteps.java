@@ -91,12 +91,7 @@ public class EndToEndSteps {
 
     @When("users enters on places the order with:")
     public void usersEntersOnPlacesTheOrderWith(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
-        cartPage.insertName("Azza");
-        cartPage.insertCountry("egypt");
-        cartPage.insertCity("cairo");
-        cartPage.insertCard("123");
-        cartPage.insertMonth("10");
-        cartPage.insertYear("2020");
+        cartPage.insert("Azza","egypt","cairo","123","10","2020");
         cartPage.ClickOnPurchaseBtn();
     }
 
